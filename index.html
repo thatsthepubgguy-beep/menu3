@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Gastronomy | Menu</title>
+   
+   <style>
+    :root {
+            --gold: #d4af37;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --gray: #2a2a2a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: "";
+            height: 1px;
+            width: 50px;
+            background-color: var(--gold);
+            margin: 0 15px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 20px;
+            border-bottom: 1px dotted var(--gray);
+            padding-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateX(5px);
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--light);
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        .price {
+            color: var(--gold);
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+  
+   </style>
+        
+</head>
+
+<body>
+
+    <header>
+        <h1>Lumina</h1>
+        <p style="letter-spacing: 2px;">FINE DINING & CRAFT COCKTAILS</p>
+    </header>
+
+    <div class="container">
+
+        <div class="section-title">Appetizers</div>
+        <div class="menu-grid">
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Truffle Arancini</div>
+                    <div class="item-desc">Crispy risotto balls with wild mushroom and parmesan.</div>
+                </div>
+                <div class="price">$16</div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Honey Glazed Octopus</div>
+                    <div class="item-desc">Charred with lemon zest and smoked paprika oil.</div>
+                </div>
+                <div class="price">$22</div>
+            </div>
+        </div>
+
+        <div class="section-title">Main Course</div>
+        <div class="menu-grid">
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Pan-Seared Scallops</div>
+                    <div class="item-desc">Served over cauliflower silk with crispy pancetta.</div>
+                </div>
+                <div class="price">$34</div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Wagyu Ribeye</div>
+                    <div class="item-desc">Garlic herb butter, roasted asparagus, and truffle mash.</div>
+                </div>
+                <div class="price">$58</div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Saffron Risotto</div>
+                    <div class="item-desc">Asparagus tips, toasted pine nuts, and vegan parmesan.</div>
+                </div>
+                <div class="price">$28</div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Cedar Plank Salmon</div>
+                    <div class="item-desc">Maple glaze, quinoa pilaf, and wilted spinach.</div>
+                </div>
+                <div class="price">$32</div>
+            </div>
+        </div>
+
+        <div class="section-title">Desserts</div>
+        <div class="menu-grid">
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Lava Cake</div>
+                    <div class="item-desc">70% dark chocolate with Madagascan vanilla bean ice cream.</div>
+                </div>
+                <div class="price">$12</div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <div class="item-name">Lemon Posset</div>
+                    <div class="item-desc">Creamy citrus delight with shortbread crumbles.</div>
+                </div>
+                <div class="price">$10</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>123 Culinary Lane, Flavortown | Open Daily 5pm - 11pm</p>
+        <p>&copy; 2026 Lumina Gastronomy</p>
+    </footer>
+
+</body>
+
+</html>
